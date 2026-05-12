@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const BASE_URL = "https://devnest.dev"; // 🔁 change to your actual domain
+const BASE_URL = "https://devnest-waitlist.vercel.app/"; // 🔁 change to your actual domain
 
 export const metadata: Metadata = {
   // ── Core ──────────────────────────────────────────────────────────────
@@ -106,8 +106,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "DevNest",
-            "url": "https://devnest.dev",
-            "logo": "https://devnest.dev/opengraph-image",
+            "url": "https://devnest-waitlist.vercel.app/",
+            "logo": "https://devnest-waitlist.vercel.app//opengraph-image",
             "sameAs": [
               "https://x.com/OfficialDevNest",
               
