@@ -19,7 +19,7 @@ export type WaitlistResult = { duplicate: boolean }
 export async function insertWaitlistEmail(email: string): Promise<WaitlistResult> {
   const { error, status } = await supabase
     .from(TABLE)
-    .insert({ [COLUMN]: email }, { count: 'exact' })
+    .insert({ [COLUMN]: email })
 
   if (error) {
     // 23505 = unique_violation (duplicate email)
