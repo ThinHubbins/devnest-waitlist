@@ -2,6 +2,7 @@ import WaitlistForm from '@/components/WaitlistForm'
 import WalletPreview from '@/components/WalletPreview'
 import FaqSection from '@/components/FaqSection'
 import BuildProgress from '@/components/BuildProgress'
+import Image from 'next/image'
 
 export default function Home() {
   return (
@@ -15,12 +16,7 @@ export default function Home() {
 
         {/* ── Logo ── */}
         <div className="logo-strip">
-          <div className="logo-mark" aria-hidden="true">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-              <polyline points="9 22 9 12 15 12 15 22"/>
-            </svg>
-          </div>
+          <Image className='image' src="/logo.png" alt='devnest logo' width={30} height={30} />
           <span className="logo-text">DevNest</span>
         </div>
 
@@ -43,9 +39,10 @@ export default function Home() {
           </h1>
 
           <p className="subtext">
-            DevNest is a creator-economy platform for developers. Climb ranks, unlock bounties,
-            and get rewarded — in real money — for the skills you bring to the community.
-          </p>
+  DevNest is a developer ecosystem built for the next generation of creators, builders, and innovators. 
+  Learn new skills, collaborate with other developers, work on real-world projects, join community challenges, and earn real rewards for the value you bring. 
+  More than just a learning platform, DevNest is a space where ideas grow into products, experience turns into opportunity, and developers become founders, creators, and leaders.
+</p>
 
           <div className="econ-pills" aria-label="Token economy overview">
             <span className="pill pill-gold">

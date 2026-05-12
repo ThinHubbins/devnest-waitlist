@@ -69,13 +69,10 @@ body::before {
 .logo-strip {
   display: flex; align-items: center; gap: 10px;
   padding: 28px 0 0;
+} 
+.image{
+  border-radius: 5px;
 }
-.logo-mark {
-  width: 32px; height: 32px; border-radius: 8px;
-  background: var(--accent-dim); border: 1px solid var(--accent-border);
-  display: grid; place-items: center;
-}
-.logo-mark svg { stroke: var(--accent); }
 .logo-text { font-family: var(--display); font-size: 20px; font-weight: 800; letter-spacing: -0.02em; color: var(--text); }
 
 /* ── Badge ── */
