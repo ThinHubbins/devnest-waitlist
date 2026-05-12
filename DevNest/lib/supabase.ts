@@ -17,9 +17,9 @@ const COLUMN = process.env.NEXT_PUBLIC_SUPABASE_EMAIL_COLUMN  ?? 'email'
 export type WaitlistResult = { duplicate: boolean }
 
 export async function insertWaitlistEmail(email: string): Promise<WaitlistResult> {
-  const { error, status } = await supabase
-    .from(TABLE)
-    .insert({ [COLUMN]: email })
+  const { error, status } = await (supabase as any)
+  .from(TABLE)
+  .insert({ [COLUMN]: email })
 
   if (error) {
     // 23505 = unique_violation (duplicate email)
