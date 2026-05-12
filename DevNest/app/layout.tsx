@@ -87,9 +87,7 @@ export const metadata: Metadata = {
 
   // ── Icons ─────────────────────────────────────────────────────────────
   icons: {
-    icon: "/faviconn.ico",
-    shortcut: "/faviconn.ico",
-    apple: "/apple-touch-icon.png",  // 180×180px — add to /public if you have one
+    icon: '/favicon.ico',
   },
 
   // ── Manifest (PWA, "Add to Home Screen") ─────────────────────────────
